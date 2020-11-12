@@ -1,0 +1,125 @@
+<Comment> {
+  "egg-texture-cards -o Jack.egg -fps 10 Walk1.png Walk2.png Walk3.png Walk4.png Walk5.png Walk6.png Walk7.png Walk8.png Walk9.png Walk10.png"
+}
+<Texture> Walk9 {
+  Walk9.png
+}
+<Texture> Walk8 {
+  Walk8.png
+}
+<Texture> Walk7 {
+  Walk7.png
+}
+<Texture> Walk6 {
+  Walk6.png
+}
+<Texture> Walk5 {
+  Walk5.png
+}
+<Texture> Walk4 {
+  Walk4.png
+}
+<Texture> Walk3 {
+  Walk3.png
+}
+<Texture> Walk2 {
+  Walk2.png
+}
+<Texture> Walk10 {
+  Walk10.png
+}
+<Texture> Walk1 {
+  Walk1.png
+}
+<Group> {
+  <Switch> { 1 }
+  <Scalar> fps { 10 }
+  <VertexPool> vpool {
+    <Vertex> 0 {
+      -0.5 0.75884 0
+      <UV> { 0 1 }
+    }
+    <Vertex> 1 {
+      -0.5 -0.75884 0
+      <UV> { 0 0 }
+    }
+    <Vertex> 2 {
+      0.5 -0.75884 0
+      <UV> { 1 0 }
+    }
+    <Vertex> 3 {
+      0.5 0.75884 0
+      <UV> { 1 1 }
+    }
+  }
+  <Group> Walk1 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk1 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk2 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk2 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk3 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk3 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk4 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk4 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk5 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk5 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk6 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk6 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk7 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk7 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk8 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk8 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk9 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk9 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Walk10 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Walk10 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+}
