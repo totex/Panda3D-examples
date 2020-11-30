@@ -1,5 +1,5 @@
 <Comment> {
-  "egg-texture-cards -o Jack.egg -fps 10 -g 0,579,0,763 Walk1.png Walk2.png Walk3.png Walk4.png Walk5.png Walk6.png Walk7.png Walk8.png Walk9.png Walk10.png"
+  "egg-texture-cards -o Jack.egg -fps 10 -g 0,579,0,763 Walk1.png Walk2.png Walk3.png Walk4.png Walk5.png Walk6.png Walk7.png Walk8.png Walk9.png Walk10.png Idle1.png Idle2.png Idle3.png Idle4.png Idle5.png Idle6.png Idle7.png Idle8.png Idle9.png Idle10.png"
 }
 <Texture> Walk9 {
   Walk9.png
@@ -30,6 +30,36 @@
 }
 <Texture> Walk1 {
   Walk1.png
+}
+<Texture> Idle9 {
+  Idle9.png
+}
+<Texture> Idle8 {
+  Idle8.png
+}
+<Texture> Idle7 {
+  Idle7.png
+}
+<Texture> Idle6 {
+  Idle6.png
+}
+<Texture> Idle5 {
+  Idle5.png
+}
+<Texture> Idle4 {
+  Idle4.png
+}
+<Texture> Idle3 {
+  Idle3.png
+}
+<Texture> Idle2 {
+  Idle2.png
+}
+<Texture> Idle10 {
+  Idle10.png
+}
+<Texture> Idle1 {
+  Idle1.png
 }
 <Group> {
   <Switch> { 1 }
@@ -119,6 +149,76 @@
     <Polygon> {
       <RGBA> { 1 1 1 1 }
       <TRef> { Walk10 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle1 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle1 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle2 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle2 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle3 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle3 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle4 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle4 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle5 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle5 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle6 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle6 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle7 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle7 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle8 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle8 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle9 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle9 }
+      <VertexRef> { 0 1 2 3 <Ref> { vpool } }
+    }
+  }
+  <Group> Idle10 {
+    <Polygon> {
+      <RGBA> { 1 1 1 1 }
+      <TRef> { Idle10 }
       <VertexRef> { 0 1 2 3 <Ref> { vpool } }
     }
   }
