@@ -1,0 +1,77 @@
+<CoordinateSystem> { Y-Up }
+
+<Comment> {
+  "egg-trans -tbnall input.egg"
+}
+<Comment> {
+  "maya2egg plane.mb plane.egg"
+}
+<Texture> my_normal_map {
+  "tex/brick-n.jpg"
+  <Scalar> format { rgb }
+  <Scalar> wrapu { repeat }
+  <Scalar> wrapv { repeat }
+  <Scalar> minfilter { linear_mipmap_linear }
+  <Scalar> magfilter { linear }
+  <Scalar> envtype { normal }
+}
+<Texture> my_color_map {
+  "tex/brick-c.jpg"
+  <Scalar> format { rgb }
+  <Scalar> wrapu { repeat }
+  <Scalar> wrapv { repeat }
+  <Scalar> minfilter { linear_mipmap_linear }
+  <Scalar> magfilter { linear }
+}
+<Group> groundPlane_transform {
+}
+<Group> pPlane1 {
+  <VertexPool> pPlaneShape1.verts {
+    <Vertex> 0 {
+      0 0 0
+      <UV> {
+        0 0
+        <Tangent> { 1 0 0 }
+        <Binormal> { 0 1 0 }
+      }
+      <Normal> { 0 0 -1 }
+      <RGBA> { 1 1 1 1 }
+    }
+    <Vertex> 1 {
+      0 10 0
+      <UV> {
+        0 1
+        <Tangent> { 1 0 0 }
+        <Binormal> { 0 1 0 }
+      }
+      <Normal> { 0 0 -1 }
+      <RGBA> { 1 1 1 1 }
+    }
+    <Vertex> 2 {
+      10 0 0
+      <UV> {
+        1 0
+        <Tangent> { 1 0 0 }
+        <Binormal> { 0 1 0 }
+      }
+      <Normal> { 0 0 -1 }
+      <RGBA> { 1 1 1 1 }
+    }
+    <Vertex> 3 {
+      10 10 0
+      <UV> {
+        1 1
+        <Tangent> { 1 0 0 }
+        <Binormal> { 0 1 0 }
+      }
+      <Normal> { 0 0 -1 }
+      <RGBA> { 1 1 1 1 }
+    }
+  }
+  <Polygon> {
+    <Normal> { 0 0 -1 }
+    <TRef> { my_color_map }
+    <TRef> { my_normal_map }
+    <VertexRef> { 2 3 1 0 <Ref> { pPlaneShape1.verts } }
+  }
+}
